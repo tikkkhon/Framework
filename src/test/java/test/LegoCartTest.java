@@ -53,7 +53,7 @@ public class LegoCartTest extends CommonConditions {
         assertThat(messageAfterRemovingProductsFromCart, is(equalTo(MESSAGE_AFTER_REMOVING_PRODUCT_FROM_CART)));
     }
 
-    @Test(groups = {"addedProductToCartPreconditionIsNeeded"})
+    @Test(groups = {"addedProductToCartPreconditionIsNeeded"}) //new
     public void useInvalidCouponCodeTest() {
         String couponCodeStatusMessage = new LegoCartPage(driver)
                 .enterCouponCode(INVALID_COUPON_CODE)
